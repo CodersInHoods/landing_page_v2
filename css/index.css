@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Main section */
+main {
+  background: linear-gradient(90deg, #0f2f49, #1d4d6e);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+main:after {
+  content: "8";
+  position: absolute;
+  top: 50%;
+  right: -5%;
+  transform: translate(0, -50%) rotate(-90deg);
+  color: #fff;
+  font-size: 100vw;
+  opacity: 0.3;
+}
+
+.main_background {
+  position: absolute;
+  width: 70vw;
+  height: 70vw;
+  background: url("../img/city.jpg") center center;
+  background-size: cover;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.main_background:before {
+  content: "";
+  display: block;
+  height: 40vw;
+  width: 40vw;
+  background: linear-gradient(90deg, #0f2f49, #1d4d6e);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.nav_items {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav_items li {
+  padding: 1em;
+}
+
+.nav_items li:last-child {
+  padding-right: 0;
+}
+
+.nav_items li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main .content_wrapper {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+main .content {
+  max-width: 40vw;
+}
+
+main .content h1 {
+  color: #fff;
+  font-size: 3em;
+}
+
+main .content h3 {
+  color: #efccb3;
+  font-size: 1.5em;
+}
+/* ========== */
+
+/* Product */
+.product {
+  padding: 4em 0;
+}
+
+.product h2,
+.product h4 {
+  text-align: center;
+  color: #1d4d6e;
+}
+
+.product h2 {
+  font-size: 4em;
+  margin: 0;
+  font-weight: black;
+}
+
+.product h4 {
+  font-size: 1.5em;
+}
+
+.product .products_list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.product .products_list li {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product .products_list li:nth-child(2) {
+  margin: 0 3em;
+}
+
+.product .products_list li .img_wrapper {
+  width: 50%;
+  padding-bottom: 50%;
+  background-color: #ecf2f5;
+  border-radius: 50%;
+}
+
+.product .products_list li h5 {
+}
+/* ========== */
+
+/* User cases section */
+
+.user_cases {
+  background-color: #0f2f49;
+  min-height: 80vh;
+  height: 0;
+  padding: 4em 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.user_cases::before {
+  content: "";
+  display: block;
+  height: 80vh;
+  width: 80vh;
+  position: absolute;
+  border: 2px dashed #fff;
+  border-radius: 50%;
+  right: -10%;
+  opacity: 0.7;
+}
+
+.user_cases > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.user_cases .header h2 {
+  color: #fff;
+  font-size: 4em;
+  margin: 0;
+}
+
+.user_cases .header h4 {
+  color: #efccb3;
+  font-size: 1.5em;
+  font-weight: black;
+  margin-top: 0.5em;
+}
+
+.user_cases .body {
+  display: flex;
+  flex-grow: 1;
+}
+
+.user_cases .body .img_section {
+  width: 60%;
+  position: relative;
+}
+
+.user_cases .body .img_section::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 20%;
+  top: 0;
+  left: 0;
+  background-color: #efccb3;
+}
+
+.user_cases .body .img_section::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 15%;
+  width: 60%;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+.user_cases .body .img_section .img_wrapper {
+  width: 70%;
+  position: absolute;
+  top: 10%;
+  left: 2%;
+  z-index: 10;
+}
+
+.user_cases .body .img_section .img_wrapper::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 80%;
+  width: 30%;
+  bottom: -20%;
+  right: -10%;
+  background-color: #515c8b;
+}
+
+.user_cases .body .img_section img {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.user_cases .body .content_section {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+.user_cases .body .content_section h3 {
+  font-size: 2em;
+}
+
+.user_cases .body .content_section h3 span {
+  color: #efccb3;
+}
+
+.user_cases .body .content_section p {
+  margin: 0;
+  line-height: 1.5em;
+}
+/* ========== */
